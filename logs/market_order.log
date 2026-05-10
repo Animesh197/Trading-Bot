@@ -1,0 +1,2 @@
+2026-05-10 20:15:11,722 - INFO - Sending MARKET order | Symbol=BTCUSDT | Side=BUY | Quantity=0.001
+2026-05-10 20:15:12,131 - INFO - MARKET order successful | OrderID=13126616758 | Status=NEW | ExecutedQty=0.0000

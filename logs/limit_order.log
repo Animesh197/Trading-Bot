@@ -1,0 +1,2 @@
+2026-05-10 20:15:42,225 - INFO - Sending LIMIT order | Symbol=BTCUSDT | Side=BUY | Quantity=0.001 | Price=50000.0
+2026-05-10 20:15:42,464 - INFO - LIMIT order successful | OrderID=13126617712 | Status=NEW | ExecutedQty=0.0000

@@ -17,6 +17,15 @@ if response["success"]:
     print("Order placed successfully!")
     print(f"Order ID: {order_data.get('orderId')}")
     print(f"Status: {order_data.get('status')}")
+
+    status = order_data.get("status")
+
+    if status == "NEW":
+        print("Note           : Order created and waiting for execution.")
+
+    elif status == "FILLED":
+        print("Note           : Order executed successfully.")
+
     print(f"Executed Qty: {order_data.get('executedQty')}")
 
 else:

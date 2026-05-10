@@ -47,7 +47,8 @@ class OrderManager:
             logger.info(
                 f"MARKET order successful | "
                 f"OrderID={response.get('orderId')} | "
-                f"Status={response.get('status')}"
+                f"Status={response.get('status')} | "
+                f"ExecutedQty={response.get('executedQty')}"
             )
 
             return {
@@ -64,7 +65,7 @@ class OrderManager:
 
             return {
                 "success": False,
-                "message": f"Binance API Error: {str(api_error)}"
+                "message": f"Binance API Error: {api_error.message}"
             }
 
         except Exception as error:
@@ -111,7 +112,8 @@ class OrderManager:
             logger.info(
                 f"LIMIT order successful | "
                 f"OrderID={response.get('orderId')} | "
-                f"Status={response.get('status')}"
+                f"Status={response.get('status')} | "
+                f"ExecutedQty={response.get('executedQty')}"
             )
 
             return {

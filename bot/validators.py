@@ -92,7 +92,7 @@ def validate_price(price, order_type: str):
 
     order_type = order_type.upper()
 
-    # MARKET orders don't require price
+    # MARKET orders don't require prices
     if order_type == "MARKET":
         return None
 
